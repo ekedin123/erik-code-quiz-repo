@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who's That Pokemon?</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <title>Multiple Choice Quiz</title>
+    <script src="assets/JQuery/jquery.js"></script>
 </head>
-
-
 <body>
-    <header>
-        Who's That Pokemon?
-    </header>
-    <section>
-        <h2 id="questions"></h2>
-        <div id="choose-pkmn"></div>
-        <div id="timer">
-            <button id="countdown">start button</button>
+    <div id="quiz-container">
+        <div id="quiz-info">
+            <h1>Multiple Choice Quiz</h1>
+            <p>How the quiz works:</p>
+            <ul>
+                <li>The quiz consists of 5 questions.</li>
+                <li>Choose the correct answer for each question.</li>
+                <li>If the timer reaches 0 or you finish all questions, the quiz ends.</li>
+            </ul>
+            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
         </div>
-    <section class="select-pkmn">
-        <div></div>
-    </section>
-    <section>
-        <div></div>
-    </section>
-    <footer>
-    </footer>
+        
+        <div id="question-container" class="hide">
+            <p id="question"></p>
+            <div id="choices-container"></div>
+        </div>
+
+        <div id="result-container" class="hide">
+            <p id="result-message"></p>
+        </div>
+
+        <div id="end-container" class="hide">
+            <p id="end-message"></p>
+            <input type="text" id="user-name" placeholder="Enter initials">
+            <button onclick="saveHighscore()">Save Highscore</button>
+        </div>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>

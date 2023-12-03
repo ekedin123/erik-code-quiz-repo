@@ -1,0 +1,21 @@
+//Webpage opens with title of quiz, how quiz works, and button "start quiz" 
+
+
+//10 questions total, multiple-choice, 4 options for userSelect
+//on button click, call question1 and display countdownTimer = 60s
+//button values = "correctAnswer" or "incorrectAnswer"
+//section button for highscores, hidden under "Highscores"
+
+
+//If userSelect correctAnswer, display message "Correct!" then call question2... q3, q4....
+//(ONLY CALL LATTER IF userSelect = correctAnswer)
+//if userSelect = correctAnswer, save userScore = (correctAnswers / totalQuestions) to localStorage
+//if userSelect = incorrectAnswer, display message "Incorrect, Try Again!" and countdownTimer --5s.
+//If userSelect totalAnswers true and countdownTimer value > 0s, endQuiz and display message "Congratulations, You Won!"
+//If countdownTimer = 0s, endQuiz and display message "Sorry, Game Over!" then prompt "Try Again?"
+//If user confirm "Try Again?", refresh page
+//if user deny, display message "Thanks for Playing! Close Window"
+//IF endQuiz, user input user name in text, save userName and userScore to localStorage
+//if userSelect highscores, display userName and userScore
+
+
