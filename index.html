@@ -3,38 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Multiple Choice Quiz</title>
     <script src="assets/JQuery/jquery.js"></script>
 </head>
 <body>
-    <div id="quiz-container">
-        <div id="quiz-info">
-            <h1>Multiple Choice Quiz</h1>
-            <p>How the quiz works:</p>
-            <ul>
-                <li>The quiz consists of 5 questions.</li>
-                <li>Choose the correct answer for each question.</li>
-                <li>If the timer reaches 0 or you finish all questions, the quiz ends.</li>
-            </ul>
-            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+    <h1>Joke Quiz Web Application</h1>
+    <p>Welcome to the Joke Quiz! Answer each question before the time runs out! each time you choose a wrong answer, you lose 5 seconds. Good luck!</p>
+    <button id="start-button">Start</button>
+    <button id="highscores-button">See Highscores</button>
+    <section id="quiz-container">
+        <h2 id="question">Question</h2>
+        <div id="options">
+            <!-- the questions display here once js adds them -->
         </div>
-        
-        <div id="question-container" class="hide">
-            <p id="question"></p>
-            <div id="choices-container"></div>
-        </div>
+        <p id="message"> <!-- correct or incorrect message display here with js --> </p>
+        <p id="timer">Time Left: <span id="countdown">60</span> seconds</p>
+    </section>
 
-        <div id="result-container" class="hide">
-            <p id="result-message"></p>
-        </div>
-
-        <div id="end-container" class="hide">
-            <p id="end-message"></p>
-            <input type="text" id="user-name" placeholder="Enter initials">
-            <button onclick="saveHighscore()">Save Highscore</button>
-        </div>
-    </div>
+    <section data-id="users-highscores">
+        <h2>Highscores</h2>
+        <ul id="highscores-list">
+            <!-- the user's highscore will display here once js receives user data and adds it -->
+        </ul>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
