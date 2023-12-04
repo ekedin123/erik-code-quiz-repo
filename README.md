@@ -22,7 +22,7 @@ if the user selects the wrong answer, the quiz has them try again until they get
 
 at the end of the quiz, whether the user guesses all questions in time or not, the user is prompted to enter their initals to save to a scoreboard that can be displayed with the "See Highscores" button.
 
-link to deployed website:
+link to deployed website: https://ekedin123.github.io/erik-code-quiz-repo/
 
 ![screenshot of web function](./assets/Images/Screenshot%202023-12-03%20204217.png)
 
